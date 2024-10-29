@@ -3,7 +3,8 @@ async function shortenUrl() {
     const resultDiv = document.getElementById("result");
 
     try {
-        const response = await fetch("http://localhost:8080/shortLink", {
+        const baseUrl = "https://2da8-2a02-ff0-3323-e087-c23-dea4-9093-b234.ngrok-free.app";
+        const response = await fetch(`${baseUrl}/shortLink`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
