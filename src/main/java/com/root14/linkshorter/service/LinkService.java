@@ -34,16 +34,13 @@ public class LinkService {
         Link link = linkRepository.findLinkByLinkLong(linkRequest.getUrlPlain());
 
         if (link != null) {
-            return ResponseEntity.status(HttpStatus.FOUND).body(link.getUniqueValue());
+            return ResponseEntity.status(HttpStatus.FOUND).body(baseUrl + "url/" + link.getUniqueValue());
         } else {
-            link = Link.builder()
-                    .linkLong(linkRequest.getUrlPlain())
-                    .uniqueValue(uniqueValue)
-                    .build();
+            link = Link.builder().linkLong(linkRequest.getUrlPlain()).uniqueValue(uniqueValue).build();
 
             linkRepository.save(link);
 
-            return ResponseEntity.status(HttpStatus.CREATED).body(baseUrl + link.getUniqueValue());
+            return ResponseEntity.status(HttpStatus.CREATED).body(baseUrl + "url/" + link.getUniqueValue());
         }
     }
 
