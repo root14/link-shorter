@@ -26,7 +26,7 @@ A simple URL shortener application built using Spring Boot and Elasticsearch.
 
 
 ![pic](https://github.com/user-attachments/assets/e0ea9a43-e725-4c19-98cf-fd737eac2723)
-**The test connection I created by redirecting with Ngrok ended up being ironically long.**
+**The test URL I created by redirecting with Ngrok ended up being ironically long.**
 
 
 ### Prerequisites
