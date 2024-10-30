@@ -24,6 +24,11 @@ A simple URL shortener application built using Spring Boot and Elasticsearch.
 | Post |```/shortLink```| Shortens a long URL | ``` "urlPlain":"http://google.co12" ``` | Shortened URL with unique value |
 | Post |```/url/{uniqueValue}``` | Shortens a long URL | Pass unique value as PathVariable | Redirect to original URL |
 
+
+![pic](https://github.com/user-attachments/assets/e0ea9a43-e725-4c19-98cf-fd737eac2723)
+**The test connection I created by redirecting with Ngrok ended up being ironically long.**
+
+
 ### Prerequisites
 
 - Java 11 or higher
