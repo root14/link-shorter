@@ -21,8 +21,8 @@ A simple URL shortener application built using Spring Boot and Elasticsearch.
 
 | Method | Endpoint |Description | Request Body | Response |
 | --- | --- | --- | --- | --- |
-| Post |``` /shortLink ```| Shortens a long URL | ``` "urlPlain":"http://google.co12" ``` | Shortened URL with unique value |
-| Post |``` /url/{uniqueValue}``` | Shortens a long URL | Pass unique value as PathVariable | Redirect to original URL |
+| Post |```/shortLink```| Shortens a long URL | ``` "urlPlain":"http://google.co12" ``` | Shortened URL with unique value |
+| Post |```/url/{uniqueValue}``` | Shortens a long URL | Pass unique value as PathVariable | Redirect to original URL |
 
 ### Prerequisites
 
